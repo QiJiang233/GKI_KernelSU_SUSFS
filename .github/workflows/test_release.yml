@@ -1,4 +1,4 @@
-name: Test Release
+name: Release发布
 
 permissions:
   contents: write
@@ -235,7 +235,7 @@ jobs:
       - get_manager
     if: always()
     env:
-      REPO_OWNER: ShirkNeko
+      REPO_OWNER: QiJiang233
       REPO_NAME: GKI_KernelSU_SUSFS
       GITHUB_TOKEN: ${{ secrets.MY_GITHUB_TOKEN }}
       RELEASE_NAME: "GKI Kernel: ${{ inputs.kernelsu_variant == 'Next' && 'KernelSU-' || '' }} ${{ inputs.kernelsu_variant }}"
